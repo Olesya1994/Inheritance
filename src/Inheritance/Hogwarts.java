@@ -2,13 +2,13 @@ package Inheritance;
 
 public class Hogwarts {
     private String name;
-    private int SorceryPower;
-    private int TransgressDistance;
+    private int sorceryPower;
+    private int transgressDistance;
 
     public Hogwarts(String name, int sorceryPower, int transgressDistance) {
         this.name = name;
-        this.SorceryPower = sorceryPower;
-        this.TransgressDistance = transgressDistance;
+        this.sorceryPower = sorceryPower;
+        this.transgressDistance = transgressDistance;
     }
 
     public String getName() {
@@ -20,26 +20,30 @@ public class Hogwarts {
     }
 
     public int getSorceryPower() {
-        return SorceryPower;
+        return sorceryPower;
     }
 
     public void setSorceryPower(int sorceryPower) {
-        SorceryPower = sorceryPower;
+        this.sorceryPower = sorceryPower;
     }
 
     public int getTransgressDistance() {
-        return TransgressDistance;
+        return transgressDistance;
     }
 
     public void setTransgressDistance(int transgressDistance) {
-        TransgressDistance = transgressDistance;
+        this.transgressDistance = transgressDistance;
     }
 
     @Override
     public String toString() {
         return "Ученик" + name + '\'' +
-                ", мощность колдовства " + SorceryPower +
-                ", расстояние трансгрессии " + TransgressDistance +
+                ", мощность колдовства " + sorceryPower +
+                ", расстояние трансгрессии " + transgressDistance +
                 '.';
+    }
+    public int getScore(){
+        int score = sorceryPower +transgressDistance;
+        return score;
     }
 }
