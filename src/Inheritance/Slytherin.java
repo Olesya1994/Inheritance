@@ -56,8 +56,15 @@ public class Slytherin extends Hogwarts{
                 ", powerLust=" + powerLust +
                 '}';
     }
-    public int getScore() {
-        int score = super.getScore() + cunning + determination + ambition+powerLust;
+    public int getSlytherinScore() {
+        int score = cunning + determination + ambition+powerLust;
         return score;
+    }
+    public void getBetterSlytherin(Slytherin student1){
+        if (student1.getSlytherinScore()>this.getSlytherinScore()){
+            System.out.println(student1.getName() + " лучший ученик Слизарена, чем " + this.getName());}
+        else if (this.getSlytherinScore()>student1.getSlytherinScore()){
+            System.out.println(this.getName() + " лучший ученик Слизарена, чем " + student1.getName());}
+        else {System.out.println(this.getName() + " и " + student1.getName()+" одинакого хороши.");}
     }
 }

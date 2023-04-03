@@ -46,8 +46,17 @@ public class Gryffindor extends Hogwarts {
                 '}';
     }
 
-    public int getScore() {
-        int score = super.getScore() + nobility + honor + courage;
+    public int getGriffindorScore() {
+        int score = nobility + honor + courage;
         return score;
     }
+    public void getBetterGriffindor(Gryffindor student1){
+        if (student1.getGriffindorScore()>this.getGriffindorScore()){
+            System.out.println(student1.getName() + " лучший Гриффиндорец, чем " + this.getName());}
+        else if (this.getGriffindorScore()>student1.getGriffindorScore()){
+            System.out.println(this.getName() + " лучший Гриффиндорец, чем " + student1.getName());}
+        else {System.out.println(this.getName() + " и " + student1.getName()+" одинакого хороши.");}
+    }
+
+
 }

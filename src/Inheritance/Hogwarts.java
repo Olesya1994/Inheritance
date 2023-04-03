@@ -24,7 +24,12 @@ public class Hogwarts {
     }
 
     public void setSorceryPower(int sorceryPower) {
-        this.sorceryPower = sorceryPower;
+        if ((sorceryPower<100) && (sorceryPower > 0)) {
+            this.sorceryPower = sorceryPower;
+        } else {
+            this.sorceryPower = 0;
+            System.out.println("Введите значение от 0 до 100");
+        }
     }
 
     public int getTransgressDistance() {
@@ -32,18 +37,33 @@ public class Hogwarts {
     }
 
     public void setTransgressDistance(int transgressDistance) {
-        this.transgressDistance = transgressDistance;
+        if (transgressDistance <= 100 & transgressDistance >= 0) {
+            this.transgressDistance = transgressDistance;
+        } else {
+            System.out.println("Введите значение от 0 до 100");
+        }
     }
 
     @Override
     public String toString() {
-        return "Ученик" + name + '\'' +
+        return "Ученик " + name + '\'' +
                 ", мощность колдовства " + sorceryPower +
                 ", расстояние трансгрессии " + transgressDistance +
                 '.';
     }
-    public int getScore(){
-        int score = sorceryPower +transgressDistance;
+
+    public int getHogwartsScore() {
+        int score = sorceryPower + transgressDistance;
         return score;
+    }
+
+    public void getBetterHogwarts(Hogwarts student1) {
+        if (student1.getHogwartsScore() > this.getHogwartsScore()) {
+            System.out.println(student1.getName() + " лучше в трансгресии и владению магией, чем " + this.getName());
+        } else if (this.getHogwartsScore() > student1.getHogwartsScore()) {
+            System.out.println(this.getName() + " лучше в трансгресии и владению магией, чем " + student1.getName());
+        } else {
+            System.out.println(this.getName() + " и " + student1.getName() + " одинакого хороши.");
+        }
     }
 }
