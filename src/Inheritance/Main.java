@@ -18,5 +18,6 @@ public class Main {
         germiona.getBetterGriffindor(ron);
         padma.getBetterRavenclaw(chang);
         harry.getBetterHogwarts(ron);
+        jastin.getBetterHufflepuff(cedrik);
     }
 }
