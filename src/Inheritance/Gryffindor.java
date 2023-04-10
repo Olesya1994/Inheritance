@@ -39,10 +39,10 @@ public class Gryffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() + "Gryffindor{" +
-                "nobility=" + nobility +
-                ", honor=" + honor +
-                ", courage=" + courage +
+        return super.toString() + "Gryffindor:" +
+                "благородство= " + nobility +
+                ", честь=" + honor +
+                ", храбрость=" + courage +
                 '}';
     }
 

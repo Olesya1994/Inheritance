@@ -49,11 +49,11 @@ public class Ravenclaw extends Hogwarts{
 
     @Override
     public String toString() {
-        return super.toString() + "Ravenclaw{" +
-                "smart=" + smart +
-                ", wise=" + wise +
-                ", witty=" + wise +
-                ", creative=" + creative +
+        return super.toString() + "Ravenclaw:" +
+                "ум=" + smart +
+                ", мудрость=" + wise +
+                ", остроумие=" + wise +
+                ", творчество=" + creative +
                 '}';
     }
     public int getRavenclawScore() {

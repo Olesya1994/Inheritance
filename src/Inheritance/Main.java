@@ -11,8 +11,8 @@ public class Main {
         Hufflepuff jastin = new Hufflepuff("Джастин Финч-Флетчли", 60, 40, 60, 30, 80);
 
         Ravenclaw chang = new Ravenclaw("Чжоу Чан", 50, 50, 40, 60, 50, 30);
-        Ravenclaw padma = new Ravenclaw("Падма Патил ", 50, 50, 40, 20, 90, 30);
-        Ravenclaw markus = new Ravenclaw("Маркус Белби", 50, 40, 40, 60, 80, 30);
+        Ravenclaw padma = new Ravenclaw("Падма Патил ", 40, 50, 40, 20, 90, 30);
+        Ravenclaw markus = new Ravenclaw("Маркус Белби", 60, 40, 40, 60, 80, 30);
 
         System.out.println(ron.toString());
         germiona.getBetterGriffindor(ron);

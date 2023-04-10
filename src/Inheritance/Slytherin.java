@@ -49,11 +49,11 @@ public class Slytherin extends Hogwarts{
 
     @Override
     public String toString() {
-        return super.toString() + "Slytherin{" +
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
-                ", powerLust=" + powerLust +
+        return super.toString() + "Slytherin:" +
+                "хитрость=" + cunning +
+                ", решительность=" + determination +
+                ", амбициозность=" + ambition +
+                ", жажда власти=" + powerLust +
                 '}';
     }
     public int getSlytherinScore() {
